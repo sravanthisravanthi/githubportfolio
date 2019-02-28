@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Udacity - Portfolio">
+    <meta name="author" content="Juan Vargas">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="leftCol">
+          <span class="avatar"></span>
+        </div>
+        <div class="rightCol">
+          <h1 class="name">Description Of<strong>Islands</strong></h1>
+          <h2 class="career">Full Stack Web Developers</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="line"></div>
+      </div>
+    </header>
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="img/img09.jpg" style="width:100%">
+  <div class="text">Caption One</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="img/img22.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="img/img33.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="img/img17.jpg" style="width:100%">
+  <div class="text">Caption Four</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+    <main>
+      <div class="container">
+        <h2 class="heading"><span>Featured <strong>Work</strong></span></h2>
+        <div id="items">
+          <article class="portfolio-item">
+			
+            <img src="img/img1.jpg" alt="Monkey">
+            <div class="text_block">
+              <h3>The Little Andaman Island</h3>
+              <p>
+				Little Andaman Island is one of the offbeat destinations in Andaman Islands. Not heavily crowded, this place has some really alluring beaches. It is one of the most beautiful islands in India, and perfect for those who love nature in its raw form. For a budgeteer, this is the perfect island in India for honeymoon. It would not be a conventional one, but a memorable one, nonetheless.</p> 
+             </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="img/img2.jpg" alt="Cat">
+            <div class="text_block">
+              <h3>Majuli Island</h3>
+              <p>
+				Majuli Island is the one of the biggest river islands in the world and subsequently in India. The most unique of all the islands in India, this place is famous for its breath-taking sunrises and stunning sunsets. You will get a fair taste of Assamese culture here. Out of all the islands of India, this one is the most unconventional one. You will find moss instead of sand on its coast and traditional northeastern cuisine instead of seafood. However, it will prove to be an experience worth all the travel.</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="img/img3.jpg" alt="Bear">
+            <div class="text_block">
+              <h3>St.Mary's Island</h3>
+              <p>
+				St Mary’s is a set of four small islands in India. Quite similarly to Giant’s Causeway in Ireland, these islands are famous for their basaltic rock formations cut into a peculiar hexagonal shape. The rocky beach and clear blue water make these islands a must visit. This island in India is still unknown to a large number of people.</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="img/img4.jpg" alt="Tiger">
+            <div class="text_block">
+              <h3>Barren Island</h3>
+              <p> Barren Island, the most easterly island of Andaman, is the only active volcanic island of India and also of South Asia. The astonishing beauty and lava rocks on this beautiful island of India will take you through a memorable journey. One of the most pristine islands of India, the sad part is that landing ashore is prohibited. You are only allowed to circle around the island in a board vessel. </p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="img/img5.jpg" alt="Panda">
+            <div class="text_block">
+              <h3>Diu Island</h3>
+              <p>This small island of India has traces of Portuguese culture infused in it. The architectural beauty and serenity can stun you to a surreal world. The exquisite beaches and tropical sea-food with a dash of Gujarati influence, will make it a notch different from other islands in India. And the best part, alcohol is legal here, unlike in Gujarat! </p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="img/img6.jpg" alt="Whale">
+            <div class="text_block">
+              <h3>Divar Island</h3>
+              <p>One of the untouched islands in India, Divar Island lies about 10 km upstream from Panjim, Goa. It is situated across the bustling river of Mandovi, and has retained the lively culture and countryside feel of Goa.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p> @ <strong>Famous Islands</strong></p>
+    </footer>
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 3 seconds
+}
+</script>
+  </body>
+</html>
