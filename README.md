@@ -1,2 +1,2 @@
 # githubportfolio
-creating a website whether it is a responsive or not
+Creating a website whether it is a Responsive Site or not
